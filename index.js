@@ -19,6 +19,7 @@ app.get("/", async (req, res) => {
 
 // blog routes
 app.use(require("./app/routes/route.blog"));
+app.use(require("./app/routes/route.user"));
 
 app.listen(3000, () => {
 	console.log("Server is running on port 3000");
